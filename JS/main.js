@@ -8,7 +8,6 @@ const dice = document.querySelector("#roll-the-dice");
 
 const getAdvice = () => {
     // const API = new fetchWrapper("https://api.adviceslip.com");
-
     fetch("https://api.adviceslip.com/advice")
         .then((response) => response.json())
         .then((data) => {
